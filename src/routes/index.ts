@@ -10,4 +10,10 @@ router.get('/',(req:Request,res:Response)=>{
 
 router.get('/usuarios',usuarioController.index)
 
+router.get('/cadastro',usuarioController.visualizaPaginaCadastro)
+
+router.post('/cadastro',usuarioController.cadastroUsuario)
+
+router.get('/editar/:id',usuarioController.editaUsuario)
+
 export default router 
